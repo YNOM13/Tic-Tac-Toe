@@ -1,0 +1,41 @@
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.6);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+.modal.active{
+  opacity: 1;
+
+}
+.modal__content{
+  background: white;
+  border-radius: 6px;
+  padding: 20px;
+  min-width: 250px;
+  margin: 10px;
+  cursor: default;
+  color:black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  button{
+    padding: 10px 30px;
+    max-width: 100px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+    background: aquamarine;
+    &:hover{
+      background: aqua;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.game-block{
+  color: white;
+  min-width: 300px;
+}
+.game-block__players{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.select-menu{
+  display: flex;
+  justify-content: center;
+}
+.player-red{
+  color: red;
+  padding: 10px;
+  border: 1px solid red;
+}
+.player-blue{
+  color: blue;
+  padding: 10px;
+  border: 1px solid blue;
+}
+.count-of-wins{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.buttons-container{
+  display: grid;
+}
+
+.game-buttons{
+  padding: 25px 30px;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 2px;
+  margin: 1px;
+  &:disabled{
+    background: white;
+    color: black;
+    font-weight: bold;
+  }
+  &:hover{
+    background: aquamarine;
+  }
+  &:active{
+    background: #338a8a;
+  }
+}
